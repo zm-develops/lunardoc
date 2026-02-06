@@ -1,6 +1,6 @@
 # `lunardoc`
 
-<p align="center"><img src="https://github.com/zm-develops/lunardoc-documentation-generator/raw/main/assets/icon.png" height="128" /></p>
+<p align="center"><img src="https://github.com/zm-develops/lunardoc/raw/main/assets/logo.png" height="120" /></p>
 
 A powerful API documentation generator for Lua (minimum supported version 5.1.5).
 

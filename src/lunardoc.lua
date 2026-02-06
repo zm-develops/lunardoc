@@ -1,4 +1,4 @@
---- Lunardoc is an automatic documentation generator for Scribunto modules.
+--- Lunardoc is an automatic documentation generator for Lua code projects.
 --  The module is based on LuaDoc and LDoc. It produces documentation in
 --  the form of MediaWiki markup, using `@tag`-prefixed comments embedded
 --  in the source code of a Scribunto module. The taglet parser & doclet
@@ -14,7 +14,7 @@
 --  public items, or emulated classes extending the Lua primitives. There
 --  are many customisation options available to change Lunardoc behaviour.
 --  
---  @module             docbunto
+--  @module             lunardoc
 --  @alias              p
 --  @require            Module:I18n
 --  @require            Module:Lexer

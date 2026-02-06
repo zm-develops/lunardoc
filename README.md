@@ -1,10 +1,12 @@
-# `loxygen`
+# `lunardoc`
+
+<p align="center"><img src="https://github.com/zm-develops/loxygen-documentation-generator/raw/main/assets/icon.png" height="128" /></p>
 
 A powerful API documentation generator for Lua (minimum supported version 5.1.5).
 
 The goal of this project is to provide a versatile block documentation comment format that can be used by IDEs such as VS Code to annotate code symbols in Lua scripts and Luarocks packages.
 
-This project is a fork of the [Docbunto](https://dev.fandom.com/wiki/Global_Lua_Modules/Docbunto) script used on MediaWiki projects.
+This project is a remake of [LDoc](https://github.com/lunarmodules/ldoc) and the [Docbunto](https://dev.fandom.com/wiki/Global_Lua_Modules/Docbunto) script used on MediaWiki projects.
 
 ## Getting started
 

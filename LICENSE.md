@@ -20,10 +20,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Loxygen incorporates LDoc, Copyright (c) 2011 by Steve Donovan and contributors, https://github.com/lunarmodules/ldoc/graphs/contributors. LDoc is distributed under the terms of the MIT License.
+Lunardoc incorporates LDoc, Copyright (c) 2011 by Steve Donovan and contributors, https://github.com/lunarmodules/ldoc/graphs/contributors. LDoc is distributed under the terms of the MIT License.
 
-Loxygen incorporates Docbunto, Copyright (c) 2020 by LMN8 and contributors, https://dev.fandom.com/wiki/Module:Docbunto?action=history. Docbunto is distributed under the terms of the MIT License.
+Lunardoc incorporates Docbunto, Copyright (c) 2020 by LMN8 and contributors, https://dev.fandom.com/wiki/Module:Docbunto?action=history. Docbunto is distributed under the terms of the MIT License.
 
-Loxygen incorporates I18n, Copyright (c) 2020 by Kocka and contributors, https://dev.fandom.com/wiki/Module:I18n?action=history. I18n is distributed under the terms of the MIT License.
+Lunardoc incorporates I18n, Copyright (c) 2020 by Kocka and contributors, https://dev.fandom.com/wiki/Module:I18n?action=history. I18n is distributed under the terms of the MIT License.
 
-Loxygen incorporates Fallbacklist, Copyright (c) 2020 by ZM and contributors, https://dev.fandom.com/wiki/Module:Fallbacklist?action=history. Docbunto is distributed under the terms of the MIT License.
+Lunardoc incorporates Fallbacklist, Copyright (c) 2020 by ZM and contributors, https://dev.fandom.com/wiki/Module:Fallbacklist?action=history. Fallbacklist is distributed under the terms of the MIT License.

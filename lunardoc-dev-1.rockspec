@@ -1,10 +1,10 @@
-package = "loxygen"
+package = "lunardoc"
 version = "dev-1"
 source = {
-   url = "git+https://github.com/zm-develops/loxygen-documentation-generator.git"
+   url = "git+https://github.com/zm-develops/lunardoc-documentation-generator.git"
 }
 description = {
-   homepage = "https://github.com/zm-develops/loxygen-documentation-generator",
+   homepage = "https://github.com/zm-develops/lunardoc-documentation-generator",
    license = "GPLV3"
 }
 dependencies = {

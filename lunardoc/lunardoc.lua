@@ -1356,7 +1356,7 @@ function p.taglet(filepath, options)
                 not new_tag and not doctag_mode and
                 not pretty_comment and not comment_brace
             then
-                separator = (utils.trim(comment_tail):find(patterns.DOCBUNTO_WIKITEXT) or fence_mode)
+                separator = utils.trim(comment_tail):find(patterns.DOCBUNTO_WIKITEXT)
                     and '\n'
                     or  (#item.description ~= 0 and patterns.DOCBUNTO_CONCAT or '')
                 item.description = utils.join{

@@ -1,12 +1,12 @@
---- Reference table for Loxygen reference links.
+--- Reference table for Lunardocs reference links.
 --  List of global functions and tables available in Scribunto.
---  @file               loxygen_references
+--  @file               data.references
 
 --- Reference data map for types.
---  @property           {table} loxygen_references.types
+--  @property           {table} lunardoc.data.references.types
 
 --- Reference link map for global items.
---  @property           {table} loxygen_references.items
+--  @property           {table} lunardoc.data.references.items
 
 return {
     types = {

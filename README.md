@@ -23,7 +23,7 @@ These are provided and maintained by the developer during the code implementatio
 --  By leaving empty comment lines, a new paragraph can be made in the
 --  documentation. This can be used to give longer explanations whitespace.
 --  
---  @script         loxygen
+--  @script         lunardoc
 --  @param          {table} options Configuration options.
 --  @param[opt]     {boolean} options.all Include local items in documentation.
 --  @param[opt]     {string} options.simple Limit documentation to descriptions.
@@ -31,7 +31,7 @@ These are provided and maintained by the developer during the code implementatio
 --  @return         {string} Compiled documentation.
 ```
 
-The block description in Loxygen comments is prefixed by the character sequence `---` or `--[[-`.
+The block description in Lunardoc comments is prefixed by the character sequence `---` or `--[[-`.
 
 Similar to other competing comment standards, documentation can be triggered by a comment containing a tag.
 
@@ -43,7 +43,7 @@ In essence, just put a `-- @param` tag and it'll work.
 | LuaDoc  | No          | Yes           | Yes         | No                  |
 | LDoc    | Active      | Yes           | Yes         | No                  |
 | EmmyLua | Active      | No            | Yes         | Yes                 |
-| Loxygen | Active      | Yes           | Yes         | Yes                 |
+| Lunardoc | Active      | Yes           | Yes         | Yes                 |
 
 - **LuaDoc**: uses `---` for block descriptions
 - **LDoc**: uses `--[[` and `---` for block descriptions
@@ -59,7 +59,7 @@ The package supports 52 documentation tags. These are prefixed with `@` as a key
 
 The full list is available on the [original Docbunto documentation page](https://dev.fandom.com/wiki/Global_Lua_Modules/Docbunto#Tags).
 
-Some developers avoid documentation generators because they aim to protect their codebase from "doctag soup" AKA `@` fatigue. To bypass this DX issue, Loxygen has a `colon` mode where tags are suffixed with `:` instead.
+Some developers avoid documentation generators because they aim to protect their codebase from "doctag soup" AKA `@` fatigue. To bypass this DX issue, Lunardoc has a `colon` mode where tags are suffixed with `:` instead.
 
 ### Item type tags
 

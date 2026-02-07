@@ -1,6 +1,6 @@
 --- **I18n-factory** is a minimal Lua port of [[I18n-js]].
 --  This module is used to demonstrate factory pattern support in
---  Loxygen. For this reason, the code is limited to the library's
+--  Lunardoc. For this reason, the code is limited to the library's
 --  @{Message} and @{I18n} objects.
 --  
 --  Do not use this in your wiki! It exists purely for tests.

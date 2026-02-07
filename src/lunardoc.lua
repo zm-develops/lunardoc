@@ -16,11 +16,6 @@
 --  
 --  @module             lunardoc
 --  @alias              p
---  @require            Module:I18n
---  @require            Module:Lexer
---  @require            Module:T
---  @require            Module:Unindent
---  @require            Module:
 --  @image              ./assets/logo.svg
 --  @author             [[User:8nml|8nml]]
 --  @author             [[User:TheReelDevs|TheReelDevs]]
@@ -156,9 +151,8 @@ end
 --  @return             {table} Cloned table.
 --  @local
 function utils.clone(val)
-    
-local function recursiveClone( val, tableRefs )
-    local retVal = {}
+    local function recursiveClone( val, tableRefs )
+        local retVal = {}
         -- Encode circular references correctly
         tableRefs[val] = retVal
 
@@ -177,7 +171,7 @@ local function recursiveClone( val, tableRefs )
         return retVal
     end
 
-    if type( val ) ~= 'table' then
+    if type(val) ~= 'table' then
 		return val
 	end
 	return recursiveClone(val, {})
@@ -294,8 +288,8 @@ end
 --  @local
 function utils.configure_patterns(options)
     -- Setup Unicode or ASCII character encoding (optimisation).
-    gsub = utils.find_then(options.unicode and utf8.gsub or string.gsub)
-    match = utils.find_then(options.unicode and utf8.match or string.match)
+    _G.gsub = utils.find_then(options.unicode and utf8.gsub or string.gsub)
+    _G.match = utils.find_then(options.unicode and utf8.match or string.match)
     patterns.DOCBUNTO_SUMMARY =
         options.iso639_th
             and '^[^ ]+'

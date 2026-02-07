@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- Loxygen overloads testcase
+-- Lunardoc overloads testcase
 --
 -- @module overloads
 -- @alias p

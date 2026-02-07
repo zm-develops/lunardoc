@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- Loxygen generic types test case
+-- Lunardoc generic types test case
 --
 -- @script generics
 -- @alias p

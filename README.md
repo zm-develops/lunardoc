@@ -31,19 +31,19 @@ These are provided and maintained by the developer during the code implementatio
 --  @return         {string} Compiled documentation.
 ```
 
-The block description in Lunardoc comments is prefixed by the character sequence `---` or `--[[-`.
+The block description in Lunardoc comments is prefixed by the character sequence `---` or `--[[`.
 
 Similar to other competing comment standards, documentation can be triggered by a comment containing a tag.
 
 In essence, just put a `-- @param` tag and it'll work.
 
 
-| Format  | Active?     | Documented?   | Mixed mode* | Conflict prevention |
-|---------|-------------|---------------|-------------|---------------------|
-| LuaDoc  | No          | Yes           | Yes         | No                  |
-| LDoc    | Active      | Yes           | Yes         | No                  |
-| EmmyLua | Active      | No            | Yes         | Yes                 |
-| Lunardoc | Active      | Yes           | Yes         | Yes                 |
+| Format   | Active?     | Documented?   | Mixed mode* | Conflict prevention | Type support |
+|----------|-------------|---------------|-------------|---------------------|--------------|
+| LuaDoc   | No          | Yes           | Yes         | No                  | No           |
+| LDoc     | Active      | Yes           | Yes         | No                  | No           |
+| EmmyLua  | Active      | No            | Yes         | Yes                 | Yes          |
+| Lunardoc | Active      | Yes           | Yes         | Yes                 | No           |
 
 - **LuaDoc**: uses `---` for block descriptions
 - **LDoc**: uses `--[[` and `---` for block descriptions

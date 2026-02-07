@@ -1499,7 +1499,7 @@ function p.taglet(filepath, options)
             -- N.B: summary field = 1st comment sentence; description = text remainder.
             if #documentation.description ~= 0 then
                 documentation.summary = match(documentation.description, patterns.DOCBUNTO_SUMMARY)
-                documentation.description = gsub(documentation.description, patterns.DOCBUNTO_SUMMARY .. '%s*', '', 1)
+                documentation.description = documentation.description:sub(select(2, documentation.description:find('%s*', #documentation.summary + 1)) + 1)
             end
 
             documentation.description = documentation.description:gsub('%s%s+', '\n\n')
@@ -1524,7 +1524,7 @@ function p.taglet(filepath, options)
 
             if #item.description ~= 0 then
                 item.summary = match(item.description, patterns.DOCBUNTO_SUMMARY)
-                item.description = gsub(item.description, patterns.DOCBUNTO_SUMMARY .. '%s*', '')
+                item.description = item.description:sub(select(2, item.description:find('%s*', #item.summary + 1)) + 1)
             end
 
             item.description = item.description:gsub('%s%s+', '\n\n')

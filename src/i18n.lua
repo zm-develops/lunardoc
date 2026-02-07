@@ -17,7 +17,7 @@ local i18n, _i18n = {}, {}
 local file = require('pl.file')
 local path = require('pl.path')
 local json = require('src.json')
-local fallbacks = require('src.fallbacks')
+local fallbacks = require('data.fallbacks')
 
 --- Argument substitution as $n where n > 0.
 --  @function           _i18n.handleArgs

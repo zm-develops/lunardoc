@@ -888,7 +888,7 @@ end
 --  @local
 function frontend.pretask_variable_prefix(item, options)
     local indent_symbol = options.ulist and '*' or ':'
-    local indent_level, indentation
+    local indent_level, indentation, item_id
 
     if item.value then
         indent_level = item.value:match('^%S*') == '...'
@@ -956,7 +956,7 @@ function frontend.pretask_usage_highlight(item, options)
             end
 
         else
-            highlight_tag = html.create('syntaxhighlight')
+            local highlight_tag = html.create('syntaxhighlight')
             highlight_tag:attr('lang', 'lua')
             if not item.value:find('\n') then
                 highlight_tag:attr('inline', 'inline')
@@ -1478,9 +1478,9 @@ function p.taglet(filepath, options)
                 if tag.modifiers then
                     options[tag.value] = (next(tag.modifiers)) == nil and true or (next(tag.modifiers))
                 elseif tag.value:find(' ') then
-                    local i = tag.value:find(' ')
-                    local key = tag.value:sub(1, i - 1)
-                    local val = tag.value:sub(i + 1)
+                    local index = tag.value:find(' ')
+                    local key = tag.value:sub(1, index - 1)
+                    local val = tag.value:sub(index + 1)
                     options[key] = (val)
                 elseif options[tag.value] == nil then
                     options[tag.value] = true

@@ -13,8 +13,8 @@
 --                  pattern" on Wikipedia]]
 
 --  Load dependencies.
-local json = require('../../src/libraries/json')
-local fallbacks = require('../../src/libraries/fallbacklist')
+local json = require('lunardoc.libraries.json')
+local fallbacks = require('../../libraries/fallbacklist')
 local frame = mw.getCurrentFrame()
 
 --- Content language for the wiki.

@@ -1,10 +1,9 @@
 --- Tokenizer for Lua source code written in pure Lua.
---  Output has parity with LoganDark's Lua lexer.
+--  Excluding types, output has parity with LoganDark's Lua lexer.
 --  @script             tokenizer
 --  @license            MIT
 --  @param              {string} text Lua source code to lex.
 --  @return             {string} Table of line arrays containing lexemes.
-
 local tokeniser = {}
 
 local lexer = require('pl.lexer')

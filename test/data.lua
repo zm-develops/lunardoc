@@ -1,7 +1,7 @@
 --- Unit tests for [[Global Lua Modules/Loxygen]].
 --  @see [[Module talk:Loxygen/testcases]]
 
-local unindent = require('../src/libraries/unindent')
+local unindent = require('lunardoc.libraries.unindent')
 
 return {
     main = {

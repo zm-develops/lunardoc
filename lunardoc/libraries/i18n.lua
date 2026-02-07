@@ -16,8 +16,8 @@ local i18n, _i18n = {}, {}
 --  Library dependencies.
 local file = require('pl.file')
 local path = require('pl.path')
-local json = require('src.json')
-local fallbacks = require('data.fallbacks')
+local json = require('lunardoc.libraries.json')
+local fallbacks = require('lunardoc.data.fallbacks')
 
 --- Argument substitution as $n where n > 0.
 --  @function           _i18n.handleArgs
@@ -188,7 +188,7 @@ function i18n.loadMessages()
     setmetatable(ds, Data)
     ds:useUserLang()
 
-    local l10n = require('data.messages')
+    local l10n = require('lunardoc.data.messages')
 
     ds._messages = {}
 

@@ -1,6 +1,6 @@
-local lunardoc = require('src.lunardoc')
-local tokenizer = require('src.tokenizer').lua
-local json = require('src.json')
+local lunardoc = require('lunardoc.lunardoc')
+local tokenizer = require('lunardoc.libraries.tokenizer').lua
+local json = require('lunardoc.libraries.json')
 
 local lapp = require('pl.lapp')
 local file = require('pl.file')

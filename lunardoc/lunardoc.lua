@@ -25,12 +25,12 @@
 local p = {}
 
 --  Module dependencies.
-local i18n = require('src/i18n').loadMessages()
-local references = require('data/references')
-local tokenizer = require('src/tokenizer').lua
-local html = require('src/html')
+local i18n = require('lunardoc.libraries.i18n').loadMessages()
+local references = require('lunardoc.data.references')
+local tokenizer = require('lunardoc.libraries.tokenizer').lua
+local html = require('lunardoc.libraries.html')
 local utf8 = require('lua-utf8')
-local unindent = require('src/unindent')
+local unindent = require('lunardoc.libraries.unindent')
 
 --  Penlight libraries.
 local file = require('pl.file')
@@ -288,8 +288,8 @@ end
 --  @local
 function utils.configure_patterns(options)
     -- Setup Unicode or ASCII character encoding (optimisation).
-    _G.gsub = utils.find_then(options.unicode and utf8.gsub or string.gsub)
-    _G.match = utils.find_then(options.unicode and utf8.match or string.match)
+    gsub = utils.find_then(options.unicode and utf8.gsub or string.gsub)
+    match = utils.find_then(options.unicode and utf8.match or string.match)
     patterns.DOCBUNTO_SUMMARY =
         options.iso639_th
             and '^[^ ]+'
@@ -1228,6 +1228,7 @@ function p.taglet(filepath, options)
     local export_mode = false
     local special_tag = false
     local factory_mode = false
+    local pragma_mode = false
     local return_mode = false
 
     local comment_tail = ''
@@ -1561,7 +1562,7 @@ function p.taglet(filepath, options)
 
     documentation.lineno = line_no
 
-    local package_name = (documentation.tags['alias'] or {}).value or documentation.name or utils.to_variable(modpath)
+    local package_name = (documentation.tags['alias'] or {}).value or documentation.name or utils.to_variable(filepath)
     local package_alias = (documentation.tags['alias'] or {}).value or 'p'
     local export_ptn = '^%s([.[])'
 
